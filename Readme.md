@@ -1,7 +1,7 @@
 # Prequest before running the program    
 ### STEP 1 :    
 Run command :  ```vault server -dev```     
-After running this command you will ```Root Token``` printed in CLI , Please copy and paste in the program in Line 12 TOKEN=\<<Root_Token\>>      
+After running this command you will ```Root Token``` printed in CLI , Please copy and paste in the program in Line 12 TOKEN=<<Root_Token>>      
 
 ### STEP 2:    
 Run command :  ```export VAULT_ADDR=http://127.0.0.1:8200```      
@@ -36,3 +36,13 @@ https://developer.hashicorp.com/vault/docs/internals/limits
 https://www.hashicorp.com/blog/certificate-management-with-vault#:~:text=Vault%20will%20maintain%20expired%20certificates%20for%20a%20certain%20buffer%20period.%20To%20optimize%20Vault%E2%80%99s%20storage%20backend%20and%20CRL%2C%20use%20the%20tidy%20endpoint%20to%20remove%20expired%20certificates%20from%20Vault.
 
 https://developer.hashicorp.com/vault/api-docs/secret/pki#tidy
+
+
+### Realted to PKI and CRL 
+https://developer.hashicorp.com/vault/tutorials/operations/performance-tuning#pki-certificates-certificate-revocation-lists
+
+https://developer.hashicorp.com/vault/docs/secrets/pki/considerations#keep-certificate-lifetimes-short-for-crls-sake
+
+
+### Automate CRL building and Tidying
+https://developer.hashicorp.com/vault/docs/secrets/pki/considerations#automate-crl-building-and-tidying
